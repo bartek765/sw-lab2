@@ -1,0 +1,4 @@
+gradio
+openai
+paho-mqtt
+python-dotenv
