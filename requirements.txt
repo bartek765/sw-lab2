@@ -1,1 +1,3 @@
--r agent/requirements.txt
+gradio>=4.44,<7
+openai>=1.50,<3
+paho-mqtt>=2.1,<3

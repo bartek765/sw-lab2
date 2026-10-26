@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: esp32-agent-bartosz
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        sync: false
+      - key: MQTT_HOST
+        sync: false
+      - key: MQTT_USER
+        sync: false
+      - key: MQTT_PASSWORD
+        sync: false
+      - key: MQTT_COMMAND_TOPIC
+        sync: false
+      - key: MQTT_RESPONSE_TOPIC
+        sync: false
